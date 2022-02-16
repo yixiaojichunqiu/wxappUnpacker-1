@@ -32,7 +32,7 @@ wxappUnpacker() {
 }
 
 de_pkg() {
-  if [ "-d" == "$1" ]
+  if [ -d "$1" ]
     then
       wxappUnpacker $1 $2
     else
